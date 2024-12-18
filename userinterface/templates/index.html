@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlaskApp</title>
+    <style>
+        .todo {
+            padding: 20px;
+            margin: 10px;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <h1>All content of MongoDB</h1>
+    <hr>
+    {% for todo in todos %}
+        <div class="todo">
+            <p>{{ todo['name'] }} <i>({{ todo['email']}})</i></p>
+        </div>
+    {% endfor %}
+
+    </div>
+</body>
+</html>
