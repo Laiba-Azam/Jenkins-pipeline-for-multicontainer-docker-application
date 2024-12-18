@@ -1,0 +1,19 @@
+{
+  "name": "applicationcontainer",
+  "version": "1.0.0",
+  "description": "test application",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "mongoose": "^8.8.4",
+    "nodeman": "^1.1.2",
+    "nodemon": "^3.1.7"
+  }
+}
