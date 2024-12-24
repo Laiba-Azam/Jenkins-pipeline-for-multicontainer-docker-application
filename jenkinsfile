@@ -10,8 +10,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Building.."
+                echo "Building.. "
                 sh '''
+                su
+                apk add --update docker openrc
+                service docker start
                 cd applicationcontainer
                 docker compose up -d 
                 '''
