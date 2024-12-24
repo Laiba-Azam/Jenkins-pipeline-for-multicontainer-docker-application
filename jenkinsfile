@@ -12,7 +12,6 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                sudo apk add --update docker openrc
                 cd applicationcontainer
                 docker compose up -d 
                 '''
