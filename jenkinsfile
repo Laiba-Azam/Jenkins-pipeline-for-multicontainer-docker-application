@@ -18,6 +18,7 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
+                sleep 10
                 curl -v http://10.0.1.154:8001/getuser
                 '''
             }
